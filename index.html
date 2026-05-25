@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanessa Abdão | Vida Real nos EUA</title>
+  <title>Vanessa Abdão</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     .hero-bg {
-      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
       background-size: cover;
       background-position: center;
+    }
+    .profile-img {
+      border: 8px solid white;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
     }
   </style>
 </head>
@@ -27,7 +32,7 @@
         <a href="#contato" class="hover:text-pink-600 transition">Contato</a>
       </div>
       <a href="https://www.instagram.com/vanessaabdao/" target="_blank" 
-         class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition flex items-center gap-2">
+         class="bg-pink-600 text-white px-6 py-2.5 rounded-full hover:bg-pink-700 transition flex items-center gap-2">
         <i class="fab fa-instagram"></i> Instagram
       </a>
     </div>
@@ -36,53 +41,34 @@
   <!-- Hero -->
   <section id="home" class="hero-bg h-screen flex items-center text-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-6xl md:text-7xl font-bold mb-4">Olá, eu sou Vanessa</h2>
+      <h2 class="text-6xl md:text-7xl font-bold mb-4">Olá, eu sou Vanessa Abdão</h2>
       <p class="text-3xl md:text-4xl mb-8">Mãe • Esposa • Criadora de Conteúdo</p>
       <p class="text-xl max-w-2xl mx-auto mb-10">
-        Vivendo nos EUA há 7 anos • Rotina real • Receitas saudáveis • Maternidade • Vida em família
+        Vivendo nos EUA há 7 anos • Rotina real • Receitas saudáveis • Maternidade com amor
       </p>
-      <div class="flex gap-4 justify-center">
-        <a href="#sobre" 
-           class="bg-white text-pink-600 px-10 py-4 rounded-full text-lg font-semibold hover:bg-pink-100 transition">
-          Conheça minha história
-        </a>
-        <a href="https://www.instagram.com/vanessaabdao/" target="_blank"
-           class="border-2 border-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-pink-600 transition">
-          Ver Instagram
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About with her photo -->
   <section id="sobre" class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-5xl font-bold mb-6">Sobre mim</h2>
+          <h2 class="text-5xl font-bold mb-8">Sobre mim</h2>
           <p class="text-lg leading-relaxed text-gray-700 mb-6">
-            Sou uma brasileira vivendo o sonho americano em Massachusetts. 
-            Casada e mãe dedicada, compartilho no Instagram e YouTube minha vida real: 
-            rotinas, receitas saudáveis, dicas de maternidade e o dia a dia da nossa família.
+            Olá! Sou Vanessa Abdão, brasileira, casada e mãe de dois. 
+            Moro em Massachusetts e compartilho minha vida real no Instagram.
           </p>
           <p class="text-lg leading-relaxed text-gray-700">
-            Acredito que a verdadeira beleza está na autenticidade. Aqui você encontra 
-            conteúdo feito com amor e sem filtros.
+            Aqui você encontra rotina da casa, receitas práticas, momentos em família 
+            e muita inspiração para viver com leveza e gratidão.
           </p>
-          <div class="mt-8 flex gap-6">
-            <div>
-              <div class="text-4xl font-bold text-pink-600">27k+</div>
-              <div class="text-gray-600">Seguidores</div>
-            </div>
-            <div>
-              <div class="text-4xl font-bold text-pink-600">700+</div>
-              <div class="text-gray-600">Posts</div>
-            </div>
-          </div>
         </div>
-        <div class="rounded-3xl overflow-hidden shadow-2xl">
-          <!-- Replace with your photo -->
-          <img src="https://picsum.photos/800/900" alt="Vanessa Abdão" class="w-full h-full object-cover">
+        
+        <div class="flex justify-center">
+          <img src="https://www.instagram.com/p/DYLD1Wmlsw5/media/?size=l" 
+               alt="Vanessa Abdão" 
+               class="profile-img rounded-3xl w-full max-w-md">
         </div>
       </div>
     </div>
@@ -91,53 +77,29 @@
   <!-- Content -->
   <section id="conteudo" class="py-24">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">O que você vai encontrar</h2>
+      <h2 class="text-5xl font-bold text-center mb-16">O que você encontra aqui</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
           <i class="fas fa-utensils text-5xl text-pink-500 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">Receitas Saudáveis</h3>
-          <p class="text-gray-600">Práticas, deliciosas e pensadas para o dia a dia da família.</p>
+          <p class="text-gray-600">Fáceis, rápidas e deliciosas para toda a família.</p>
         </div>
-        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
           <i class="fas fa-baby text-5xl text-pink-500 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">Maternidade Real</h3>
-          <p class="text-gray-600">Dicas, experiências e tudo sobre criação consciente.</p>
+          <p class="text-gray-600">Experiências, dicas e amor de mãe.</p>
         </div>
-        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
           <i class="fas fa-home text-5xl text-pink-500 mb-6"></i>
           <h3 class="text-2xl font-semibold mb-3">Vida nos EUA</h3>
-          <p class="text-gray-600">Rotina, cultura, adaptação e dicas para quem quer morar aqui.</p>
+          <p class="text-gray-600">Rotina, adaptação e dicas para brasileiros.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / CTA -->
-  <section id="contato" class="py-24 bg-pink-600 text-white">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-5xl font-bold mb-6">Vamos nos conectar?</h2>
-      <p class="text-2xl mb-10">Siga minha jornada ou entre em contato para parcerias</p>
-      
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="https://www.instagram.com/vanessaabdao/" target="_blank" 
-           class="bg-white text-pink-600 px-8 py-4 rounded-2xl text-lg flex items-center gap-3 hover:scale-105 transition">
-          <i class="fab fa-instagram text-2xl"></i>
-          Instagram
-        </a>
-        <a href="https://www.youtube.com/channel/UCzY4IB9QPwntcJQTTjILbmQ" target="_blank" 
-           class="bg-white text-pink-600 px-8 py-4 rounded-2xl text-lg flex items-center gap-3 hover:scale-105 transition">
-          <i class="fab fa-youtube text-2xl"></i>
-          YouTube
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <p>© 2026 Vanessa Abdão • Feito com ❤️ por Lucas</p>
-    </div>
+  <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+    <p>© 2026 Vanessa Abdão • Feito com ❤️</p>
   </footer>
 
 </body>
