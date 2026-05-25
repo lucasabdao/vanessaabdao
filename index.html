@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +8,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     .hero-bg {
-      background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('https://lucasabdao.github.io/vanessaabdao/family-christmas.jpg');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
     }
-    .gallery-img {
+    .recipe-card {
       transition: all 0.3s ease;
     }
-    .gallery-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    .recipe-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body class="font-sans">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-5">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
       <h1 class="text-3xl font-bold text-pink-600">Vanessa Abdão</h1>
+      <div class="hidden md:flex space-x-8 text-lg">
+        <a href="#home" class="hover:text-pink-600 transition">Início</a>
+        <a href="#sobre" class="hover:text-pink-600 transition">Sobre</a>
+        <a href="#receitas" class="hover:text-pink-600 transition">Receitas</a>
+        <a href="#galeria" class="hover:text-pink-600 transition">Galeria</a>
+        <a href="#contato" class="hover:text-pink-600 transition">Contato</a>
+      </div>
       <a href="https://www.instagram.com/vanessaabdao/" target="_blank" 
-         class="bg-pink-600 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-pink-700">
+         class="bg-pink-600 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-pink-700 transition">
         <i class="fab fa-instagram"></i> Instagram
       </a>
     </div>
@@ -38,65 +46,101 @@
   <!-- Hero -->
   <section id="home" class="hero-bg h-screen flex items-center text-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-5xl md:text-6xl font-bold mb-4">Olá, eu sou Vanessa Abdão</h2>
-      <p class="text-3xl md:text-4xl mb-6">Mãe • Esposa • Criadora de Conteúdo</p>
-      <p class="text-xl max-w-2xl mx-auto">Vivendo nos EUA com amor, fé e muita gratidão ✨</p>
+      <h2 class="text-6xl md:text-7xl font-bold mb-6">Olá, eu sou Vanessa Abdão</h2>
+      <p class="text-3xl md:text-4xl mb-8">Mãe • Esposa • Criadora de Conteúdo</p>
+      <p class="text-xl max-w-2xl mx-auto">Rotina real • Receitas saudáveis • Vida em família nos EUA</p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="sobre" class="py-20 bg-gray-50">
+  <!-- Sobre -->
+  <section id="sobre" class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 class="text-5xl font-bold mb-6">Sobre mim</h2>
+          <h2 class="text-5xl font-bold mb-8">Sobre mim</h2>
           <p class="text-lg leading-relaxed text-gray-700">
-            Brasileira morando em Massachusetts, casada e mãe. 
-            Compartilho minha vida real, rotina, receitas e momentos em família.
+            Brasileira morando em Massachusetts, casada e mãe de dois. 
+            Compartilho minha vida real com carinho e autenticidade.
           </p>
         </div>
-        <div class="flex justify-center">
+        <div>
           <img src="https://lucasabdao.github.io/vanessaabdao/family-christmas.jpg" 
-               alt="Vanessa Abdão" class="rounded-3xl shadow-2xl w-full max-w-md">
+               alt="Família" class="rounded-3xl shadow-2xl">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Photo Gallery -->
-  <section id="galeria" class="py-20 bg-white">
+  <!-- ===== RECEITAS SECTION COM FOTOS ===== -->
+  <section id="receitas" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-4">Galeria de Momentos</h2>
-      <p class="text-center text-gray-600 mb-12">Nossa vida em família ❤️</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Main Photo -->
-        <div class="rounded-3xl overflow-hidden">
-          <img src="https://lucasabdao.github.io/vanessaabdao/family-christmas.jpg" 
-               alt="Família Natal" class="gallery-img w-full h-full object-cover">
-        </div>
-        
-        <!-- Add more photos here later -->
-        <div class="rounded-3xl overflow-hidden bg-gray-100 flex items-center justify-center text-gray-400 h-80">
-          <div class="text-center">
-            <i class="fas fa-camera text-5xl mb-3"></i>
-            <p>Adicione mais fotos aqui</p>
+      <h2 class="text-5xl font-bold text-center mb-4">Minhas Receitas</h2>
+      <p class="text-center text-gray-600 mb-16">Práticas, saudáveis e feitas com amor ❤️</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Receita 1 -->
+        <div class="recipe-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="https://picsum.photos/id/1080/600/400" 
+               alt="Pão de Banana Fit" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Pão de Banana Fit</h3>
+            <p class="text-gray-600 text-sm mb-4">Café da manhã saudável • Sem glúten</p>
+            <p class="text-pink-600 font-medium cursor-pointer hover:underline">Ver receita completa →</p>
           </div>
         </div>
-        
-        <div class="rounded-3xl overflow-hidden bg-gray-100 flex items-center justify-center text-gray-400 h-80">
-          <div class="text-center">
-            <i class="fas fa-camera text-5xl mb-3"></i>
-            <p>Adicione mais fotos aqui</p>
+
+        <!-- Receita 2 -->
+        <div class="recipe-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="https://picsum.photos/id/292/600/400" 
+               alt="Frango Cremoso" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Frango Cremoso Low Carb</h3>
+            <p class="text-gray-600 text-sm mb-4">Almoço / Jantar • Fácil e rápido</p>
+            <p class="text-pink-600 font-medium cursor-pointer hover:underline">Ver receita completa →</p>
           </div>
         </div>
+
+        <!-- Receita 3 -->
+        <div class="recipe-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="https://picsum.photos/id/431/600/400" 
+               alt="Brigadeiro Fit" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Brigadeiro de Colher Fit</h3>
+            <p class="text-gray-600 text-sm mb-4">Sobremesa saudável • Sem açúcar</p>
+            <p class="text-pink-600 font-medium cursor-pointer hover:underline">Ver receita completa →</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12 text-center">
-    <p>© 2026 Vanessa Abdão • Feito com ❤️</p>
+  <!-- Galeria -->
+  <section id="galeria" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12">Galeria de Momentos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <img src="https://lucasabdao.github.io/vanessaabdao/family-christmas.jpg" 
+             alt="Família" class="rounded-3xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-24 bg-pink-600 text-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-5xl font-bold mb-6">Vamos nos conectar?</h2>
+      <a href="https://www.instagram.com/vanessaabdao/" target="_blank"
+         class="inline-flex items-center gap-3 bg-white text-pink-600 px-10 py-5 rounded-3xl text-xl font-semibold">
+        <i class="fab fa-instagram text-3xl"></i>
+        Seguir no Instagram
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+    <p>© 2026 Vanessa Abdão</p>
   </footer>
 
 </body>
